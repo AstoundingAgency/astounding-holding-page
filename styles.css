@@ -28,8 +28,8 @@ main {
 }
 
 .content {
-    width: 25rem;
-    max-width: 100%;
+    width: 60%;
+    max-width: 25rem;
     max-height: 100%;
     margin: 0 auto;
     grid-area: pane;
@@ -40,10 +40,13 @@ main {
 h1 {
     font-family: Jost, sans-serif;
     font-weight: 500;
+    font-size: calc(min(4.5vw, 2rem));
     font-style: normal;
     text-align: center;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 0.66em;
+    text-indent: 0.46em;
     color: var(--foreground);
     opacity: 0;
     filter: blur(8px);
