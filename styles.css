@@ -40,13 +40,13 @@ main {
 h1 {
     font-family: Jost, sans-serif;
     font-weight: 500;
-    font-size: calc(min(4.5vw, 2rem));
+    font-size: calc(min(4vw, 1.8rem));
     font-style: normal;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 0.66em;
-    text-indent: 0.46em;
+    text-indent: 0.66em;
     color: var(--foreground);
     opacity: 0;
     filter: blur(8px);
