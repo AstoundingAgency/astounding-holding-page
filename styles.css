@@ -51,30 +51,41 @@ h1 {
 }
 
 #base {
-    transform: translateY(100%);
     transform-origin: center;
-    animation: base 1s forwards ease-out;
+    animation: base 1s 0s forwards ease-out;
 }
 
 #top {
-    transform: translateY(150%);
-    animation: top 3s 1s forwards ease-out;
+    animation: top 2s 1s forwards ease-out;
+    opacity: 0;
 }
 
 @keyframes base {
-    to {
-        transform: translateY(0);
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+        filter: blur(8px);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+        filter: blur(0);
     }
 }
 
 @keyframes top {
-    to {
-        transform: translateY(0);
+    0% {
+        transform: translateY(150%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
 
 @keyframes title {
-    to {
+    100% {
         opacity: 1;
         filter: blur(0);
     }
